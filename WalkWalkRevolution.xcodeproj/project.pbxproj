@@ -15,9 +15,12 @@
 		0D05982C2435BF99008284B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D05982A2435BF99008284B2 /* LaunchScreen.storyboard */; };
 		0D0598372435BF99008284B2 /* WalkWalkRevolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0598362435BF99008284B2 /* WalkWalkRevolutionTests.swift */; };
 		0D0598422435BF99008284B2 /* WalkWalkRevolutionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0598412435BF99008284B2 /* WalkWalkRevolutionUITests.swift */; };
-		0D8F5D242436D27E002CFB52 /* PedometerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D232436D27E002CFB52 /* PedometerAdapter.swift */; };
-		0D8F5D252436D27E002CFB52 /* PedometerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D232436D27E002CFB52 /* PedometerAdapter.swift */; };
-		0D8F5D262436D27E002CFB52 /* PedometerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D232436D27E002CFB52 /* PedometerAdapter.swift */; };
+		0D8F5D242436D27E002CFB52 /* PedometerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D232436D27E002CFB52 /* PedometerProtocol.swift */; };
+		0D8F5D252436D27E002CFB52 /* PedometerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D232436D27E002CFB52 /* PedometerProtocol.swift */; };
+		0D8F5D262436D27E002CFB52 /* PedometerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D232436D27E002CFB52 /* PedometerProtocol.swift */; };
+		0D8F5D282436DBCD002CFB52 /* CMPedometerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D272436DBCD002CFB52 /* CMPedometerAdapter.swift */; };
+		0D8F5D292436DBCD002CFB52 /* CMPedometerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D272436DBCD002CFB52 /* CMPedometerAdapter.swift */; };
+		0D8F5D2A2436DBCD002CFB52 /* CMPedometerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D272436DBCD002CFB52 /* CMPedometerAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +55,8 @@
 		0D05983D2435BF99008284B2 /* WalkWalkRevolutionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkWalkRevolutionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D0598412435BF99008284B2 /* WalkWalkRevolutionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkWalkRevolutionUITests.swift; sourceTree = "<group>"; };
 		0D0598432435BF99008284B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D8F5D232436D27E002CFB52 /* PedometerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerAdapter.swift; sourceTree = "<group>"; };
+		0D8F5D232436D27E002CFB52 /* PedometerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerProtocol.swift; sourceTree = "<group>"; };
+		0D8F5D272436DBCD002CFB52 /* CMPedometerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMPedometerAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +140,8 @@
 		0D8F5D222436D239002CFB52 /* Pedometer */ = {
 			isa = PBXGroup;
 			children = (
-				0D8F5D232436D27E002CFB52 /* PedometerAdapter.swift */,
+				0D8F5D232436D27E002CFB52 /* PedometerProtocol.swift */,
+				0D8F5D272436DBCD002CFB52 /* CMPedometerAdapter.swift */,
 			);
 			path = Pedometer;
 			sourceTree = "<group>";
@@ -272,10 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8F5D282436DBCD002CFB52 /* CMPedometerAdapter.swift in Sources */,
 				0D0598242435BF96008284B2 /* ViewController.swift in Sources */,
 				0D0598202435BF96008284B2 /* AppDelegate.swift in Sources */,
 				0D0598222435BF96008284B2 /* SceneDelegate.swift in Sources */,
-				0D8F5D242436D27E002CFB52 /* PedometerAdapter.swift in Sources */,
+				0D8F5D242436D27E002CFB52 /* PedometerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8F5D292436DBCD002CFB52 /* CMPedometerAdapter.swift in Sources */,
 				0D0598372435BF99008284B2 /* WalkWalkRevolutionTests.swift in Sources */,
-				0D8F5D252436D27E002CFB52 /* PedometerAdapter.swift in Sources */,
+				0D8F5D252436D27E002CFB52 /* PedometerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8F5D2A2436DBCD002CFB52 /* CMPedometerAdapter.swift in Sources */,
 				0D0598422435BF99008284B2 /* WalkWalkRevolutionUITests.swift in Sources */,
-				0D8F5D262436D27E002CFB52 /* PedometerAdapter.swift in Sources */,
+				0D8F5D262436D27E002CFB52 /* PedometerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol PedometerAdapter {
-    func getDailySteps() -> Int64
+protocol PedometerProtocol {
+    func getDailySteps(currentTime time: Date) -> Int64
 }
