@@ -23,10 +23,17 @@ class CMPedometerAdapter: PedometerProtocol {
         let endIdx = timeStr.index(timeStr.startIndex, offsetBy: 19)
         timeStr.replaceSubrange(startIdx..<endIdx, with: "00:00:00")
         let format = DateFormatter()
-        format.dateFormat = "yyyy-MM-dd HH:mm:ss zzzz"
-        let startOfDay = format.date(from: timeStr)
-        print(startOfDay!.description)
-        return 0
+        format.dateFormat = "yyyy-MM-dd HH:mm:ss ZZZZZ"
+        let startOfDay = format.date(from: timeStr)!
+        var steps: Int64 = -1;
+        pedometer.queryPedometerData(from: startOfDay, to: time, withHandler: {(data, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let data = data {
+                steps = Int64(truncating: data.numberOfSteps)
+            }
+            })
+        return steps
     }
     
 }
