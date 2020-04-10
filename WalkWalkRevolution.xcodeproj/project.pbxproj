@@ -21,6 +21,8 @@
 		0D8F5D282436DBCD002CFB52 /* CMPedometerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D272436DBCD002CFB52 /* CMPedometerAdapter.swift */; };
 		0D8F5D292436DBCD002CFB52 /* CMPedometerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D272436DBCD002CFB52 /* CMPedometerAdapter.swift */; };
 		0D8F5D2A2436DBCD002CFB52 /* CMPedometerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D272436DBCD002CFB52 /* CMPedometerAdapter.swift */; };
+		0DA2F38E2440480800619118 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA2F38D2440480800619118 /* Home.storyboard */; };
+		0DA2F390244048C900619118 /* Routes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA2F38F244048C900619118 /* Routes.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		0D0598432435BF99008284B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D8F5D232436D27E002CFB52 /* PedometerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerProtocol.swift; sourceTree = "<group>"; };
 		0D8F5D272436DBCD002CFB52 /* CMPedometerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMPedometerAdapter.swift; sourceTree = "<group>"; };
+		0DA2F38D2440480800619118 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		0DA2F38F244048C900619118 /* Routes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Routes.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				0D0598282435BF99008284B2 /* Assets.xcassets */,
 				0D05982A2435BF99008284B2 /* LaunchScreen.storyboard */,
 				0D05982D2435BF99008284B2 /* Info.plist */,
+				0DA2F38D2440480800619118 /* Home.storyboard */,
+				0DA2F38F244048C900619118 /* Routes.storyboard */,
 			);
 			path = WalkWalkRevolution;
 			sourceTree = "<group>";
@@ -251,8 +257,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D05982C2435BF99008284B2 /* LaunchScreen.storyboard in Resources */,
+				0DA2F390244048C900619118 /* Routes.storyboard in Resources */,
 				0D0598292435BF99008284B2 /* Assets.xcassets in Resources */,
 				0D0598272435BF96008284B2 /* Main.storyboard in Resources */,
+				0DA2F38E2440480800619118 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
