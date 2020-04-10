@@ -20,10 +20,17 @@ class CMPedometerAdapter: PedometerProtocol {
     func getDailySteps(currentTime time: Date) -> Int64 {
         let timeStr = getStartOfDayStr(time)
         let format = DateFormatter()
-        format.dateFormat = "yyyy-MM-dd HH:mm:ss zzzz"
-        let startOfDay = format.date(from: timeStr)
-        print(startOfDay!.description)
-        return 0
+        format.dateFormat = "yyyy-MM-dd HH:mm:ss ZZZZZ"
+        let startOfDay = format.date(from: timeStr)!
+        var steps: Int64 = -1;
+        pedometer.queryPedometerData(from: startOfDay, to: time, withHandler: {(data, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let data = data {
+                steps = Int64(truncating: data.numberOfSteps)
+            }
+            })
+        return steps
     }
     
     private func getStartOfDayStr(_ date: Date) -> String {
