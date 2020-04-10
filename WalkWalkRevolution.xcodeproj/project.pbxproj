@@ -23,6 +23,7 @@
 		0D8F5D2A2436DBCD002CFB52 /* CMPedometerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F5D272436DBCD002CFB52 /* CMPedometerAdapter.swift */; };
 		0DA2F38E2440480800619118 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA2F38D2440480800619118 /* Home.storyboard */; };
 		0DA2F390244048C900619118 /* Routes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA2F38F244048C900619118 /* Routes.storyboard */; };
+		0DA2F393244049B700619118 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2F392244049B700619118 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		0D8F5D272436DBCD002CFB52 /* CMPedometerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMPedometerAdapter.swift; sourceTree = "<group>"; };
 		0DA2F38D2440480800619118 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		0DA2F38F244048C900619118 /* Routes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Routes.storyboard; sourceTree = "<group>"; };
+		0DA2F392244049B700619118 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		0D05981E2435BF96008284B2 /* WalkWalkRevolution */ = {
 			isa = PBXGroup;
 			children = (
+				0DA2F3912440498D00619118 /* Home */,
 				0D8F5D222436D239002CFB52 /* Pedometer */,
 				0D05981F2435BF96008284B2 /* AppDelegate.swift */,
 				0D0598212435BF96008284B2 /* SceneDelegate.swift */,
@@ -119,7 +122,6 @@
 				0D0598282435BF99008284B2 /* Assets.xcassets */,
 				0D05982A2435BF99008284B2 /* LaunchScreen.storyboard */,
 				0D05982D2435BF99008284B2 /* Info.plist */,
-				0DA2F38D2440480800619118 /* Home.storyboard */,
 				0DA2F38F244048C900619118 /* Routes.storyboard */,
 			);
 			path = WalkWalkRevolution;
@@ -150,6 +152,15 @@
 				0D8F5D272436DBCD002CFB52 /* CMPedometerAdapter.swift */,
 			);
 			path = Pedometer;
+			sourceTree = "<group>";
+		};
+		0DA2F3912440498D00619118 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0DA2F38D2440480800619118 /* Home.storyboard */,
+				0DA2F392244049B700619118 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 				0D0598202435BF96008284B2 /* AppDelegate.swift in Sources */,
 				0D0598222435BF96008284B2 /* SceneDelegate.swift in Sources */,
 				0D8F5D242436D27E002CFB52 /* PedometerProtocol.swift in Sources */,
+				0DA2F393244049B700619118 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

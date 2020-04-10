@@ -10,7 +10,7 @@
         <!--Home-->
         <scene sceneID="tLH-Hb-e5H">
             <objects>
-                <viewController id="qbH-Ex-4yb" sceneMemberID="viewController">
+                <viewController id="qbH-Ex-4yb" customClass="HomeViewController" customModule="WalkWalkRevolution" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WUb-3P-EHK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
