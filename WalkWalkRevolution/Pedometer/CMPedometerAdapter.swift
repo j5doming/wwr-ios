@@ -18,10 +18,7 @@ class CMPedometerAdapter: PedometerProtocol {
     }
     
     func getDailySteps(currentTime time: Date) -> Int64 {
-        var timeStr = time.description
-        let startIdx = timeStr.index(timeStr.startIndex, offsetBy: 11)
-        let endIdx = timeStr.index(timeStr.startIndex, offsetBy: 19)
-        timeStr.replaceSubrange(startIdx..<endIdx, with: "00:00:00")
+        let timeStr = getStartOfDayStr(time)
         let format = DateFormatter()
         format.dateFormat = "yyyy-MM-dd HH:mm:ss ZZZZZ"
         let startOfDay = format.date(from: timeStr)!
@@ -34,6 +31,14 @@ class CMPedometerAdapter: PedometerProtocol {
             }
             })
         return steps
+    }
+    
+    private func getStartOfDayStr(_ date: Date) -> String {
+        var timeStr = date.description
+        let startIdx = timeStr.index(timeStr.startIndex, offsetBy: 11)
+        let endIdx = timeStr.index(timeStr.startIndex, offsetBy: 19)
+        timeStr.replaceSubrange(startIdx..<endIdx, with: "00:00:00")
+        return timeStr
     }
     
 }
